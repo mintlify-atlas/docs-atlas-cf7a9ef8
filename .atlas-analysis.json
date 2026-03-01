@@ -1,0 +1,127 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Bend",
+  "projectDescription": "Production-ready backend scaffolder that creates secure, optimized backend projects with enterprise-grade features baked in from day one",
+  "theme": "aspen",
+  "primaryColor": "#d946ef",
+  "lightColor": "#f0abfc",
+  "darkColor": "#a21caf",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/templates",
+              "concepts/runtime-detection",
+              "concepts/package-managers",
+              "concepts/project-structure"
+            ]
+          },
+          {
+            "group": "Templates",
+            "pages": [
+              "templates/overview",
+              "templates/express",
+              "templates/fastify",
+              "templates/mongoose",
+              "templates/prisma"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/security",
+              "features/logging",
+              "features/error-handling",
+              "features/environment-config"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/customization",
+              "guides/deployment",
+              "guides/testing",
+              "guides/best-practices"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Reference",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": [
+              "cli/create-bend",
+              "cli/bend-core",
+              "cli/bendjs",
+              "cli/options"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "cli/interactive-mode",
+              "cli/flags",
+              "cli/environment-variables"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core API",
+            "pages": [
+              "api/overview",
+              "api/generate-project",
+              "api/renderer",
+              "api/writer"
+            ]
+          },
+          {
+            "group": "Types",
+            "pages": [
+              "api/types/cli-options",
+              "api/types/generate-options",
+              "api/types/stack-deps"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Production-ready security with helmet, cors, rate limiting, and HPP protection",
+    "Enterprise logging with Winston and daily log rotation",
+    "Smart runtime and package manager detection",
+    "8 template combinations (TypeScript/JavaScript × Express/Fastify × Mongoose/Prisma)",
+    "Multiple runtime support (Node.js and Bun)",
+    "TypeScript-first with strict mode enabled",
+    "Zero configuration with customization options",
+    "Graceful shutdown and error handling"
+  ],
+  "publicApiSurface": [
+    "npm create bend",
+    "npx bend-core",
+    "bend (global CLI)",
+    "createProject(options)",
+    "generateProjectFromTemplate(options)",
+    "resolveDeps(stackInput)",
+    "normalizeGenerateOptions(options)",
+    "installDependencies(targetRoot, packageManager)"
+  ]
+}
